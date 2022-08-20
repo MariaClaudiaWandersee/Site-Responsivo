@@ -1,0 +1,36 @@
+body {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 768px;
+    border: 1px solid tomato;
+    margin: 50px auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media (max-width: 768px) {
+    .row{
+        flex-direction: column;
+    }
+    h1{
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 769px) {
+    h1{
+        font-size: 2rem;
+    }
+}
