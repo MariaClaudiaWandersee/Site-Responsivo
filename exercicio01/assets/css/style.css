@@ -1,11 +1,17 @@
 body {
-    background-color: #000000;
-    color: #FFFFFF;
+    background-color: #FFFFFF;
+    color: #000000;
 }
 
 img {
     max-width: 100%;
     height: auto;
+}
+
+.robin-img {
+    max-width: 200px;
+    border-radius: 1rem;
+    overflow: hidden;
 }
 
 .container {
@@ -19,18 +25,143 @@ img {
     justify-content: space-between;
 }
 
+.row .col {
+    flex: 0 1 100%;
+}
+
 
 @media (max-width: 768px) {
-    .row{
+    .row {
         flex-direction: column;
     }
-    h1{
+
+    .row div {
+        border: 5px solid pink;
+    }
+
+    h1 {
         font-size: 1rem;
     }
 }
 
 @media (min-width: 769px) {
-    h1{
+    h1 {
         font-size: 2rem;
     }
+}
+
+
+.container {
+    max-width: 1330px;
+    margin: 20px auto;
+    border: 1px solid tomato;
+}
+
+.row {
+    display: flex;
+}
+
+/* 1 a 12 */
+
+.col-1 {
+    flex-basis: 8.33%;
+    background-color: #000000;
+}
+
+.col-2 {
+    flex-basis: 16.6%;
+    background-color: red;
+}
+
+.col-3 {
+    flex-basis: 25%;
+    background-color: #000000;
+}
+
+.col-4 {
+    flex-basis: 33.33%;
+    background-color: red;
+}
+
+.col-5 {
+    flex-basis: 41.6%;
+    background-color: #000000;
+}
+
+.col-6 {
+    flex-basis: 50%;
+    background-color: red;
+}
+
+.col-7 {
+    flex-basis: 58.3%;
+    background-color: #000000;
+}
+
+.col-8 {
+    flex-basis: 66.6%;
+    background-color: red;
+}
+
+.col-9 {
+    flex-basis: 75%;
+    background-color: #000000;
+}
+
+.col-10 {
+    flex-basis: 83.3%;
+    background-color: red;
+}
+
+.col-11 {
+    flex-basis: 91.6%;
+    background-color: #000000;
+}
+
+.col-12 {
+    flex-basis: 100%;
+    background-color: red;
+}
+
+
+
+/*netshoes*/
+/* .col {
+    position: relative;
+    margin-left: 152px;
+    top: 133px;
+    display: inline;
+    cursor: pointer;
+} */
+
+.roupas{
+    max-width: 100%;
+height: auto;
+position: relative;
+left: 105px;
+top: 91px;
+}
+
+.botas{
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    left: 105px;
+    top: 91px;
+}
+
+.acessorios {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    left: 105px;
+    top: 91px;
+}
+
+.suplementos {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    left: 286px;
+    top: 186px;
 }
