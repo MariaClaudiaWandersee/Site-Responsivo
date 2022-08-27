@@ -1,6 +1,7 @@
 body {
     background-color: #FFFFFF;
     color: #000000;
+    font-family: sans-serif;
 }
 
 img {
@@ -15,10 +16,11 @@ img {
 }
 
 .container {
-    max-width: 768px;
+    max-width: 1330px !important;
+    margin: 20px auto;
     border: 1px solid tomato;
-    margin: 50px auto;
 }
+
 
 .row {
     display: flex;
@@ -50,16 +52,6 @@ img {
     }
 }
 
-
-.container {
-    max-width: 1330px;
-    margin: 20px auto;
-    border: 1px solid tomato;
-}
-
-.row {
-    display: flex;
-}
 
 /* 1 a 12 */
 
@@ -126,13 +118,6 @@ img {
 
 
 /*netshoes*/
-/* .col {
-    position: relative;
-    margin-left: 152px;
-    top: 133px;
-    display: inline;
-    cursor: pointer;
-} */
 
 .roupas{
     max-width: 100%;
@@ -164,4 +149,48 @@ top: 91px;
     position: relative;
     left: 286px;
     top: 186px;
+}
+
+/*Estilo do Menu*/
+#main ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+
+#main ul li {
+    list-style: none;
+    font-size: 0.9rem; /*14px*/
+    text-transform: uppercase;
+    position: relative;
+}
+
+#main ul li a {
+    text-decoration: none;
+    color: rgb(27,27,27);
+    transition: all 1s;
+    padding: 20px 10px;
+    display: block;
+}
+
+#main ul li:hover a, #main ul li:hover {
+    color: white;
+    background-color: darkslategray;
+}
+
+#main ul li ul.sub-menu {
+    display: none;
+    position: absolute;
+    bottom: -100%;
+    min-width: max-content;
+}
+
+#main ul li:hover ul.sub-menu{
+    display: block;
+    background-color: darkslategray;
+}
+
+#main ul li ul.sub-menu a {
+    color: white;
 }
